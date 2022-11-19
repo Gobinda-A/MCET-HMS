@@ -32,6 +32,7 @@ h1{
  border-radius: 20px;
  align-items: center;
  box-shadow: 0 5px #999;
+ cursor: pointer;
 }
 .but:hover{
   background-color: azure;
