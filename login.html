@@ -30,17 +30,18 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form name="loginForm" action="new.html" class="sign-in-form" onsubmit="return verifyMe()">
+          <form name="loginForm" class="sign-in-form" method="post">
             <h2 class="title">Sign In</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" name="uname"/>
+              <input type="text" placeholder="Username" name="uname" id="uname"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" name="pass"/>
+              <input type="password" placeholder="Password" name="pass" id="lock"/>
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" id="myAnchor" class="btn solid" onclick="verifyMe()"/>
+
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -57,33 +58,33 @@
               </a>
             </div>
           </form>
-          <form action="success.html" class="sign-up-form" name="myForm" onsubmit="return validateForm()">
+          <form action="" class="sign-up-form" method="post" name="myForm" onsubmit="return validateForm()">
             <h2 class="title" id="signup">Sign Up</h2>
             <div class="input-field" id="name">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" name="fname"/><span class="formerror"></span>
+              <input type="text" placeholder="Username" name="fname" required/><span class="formerror"></span>
             </div>
             <div class="input-field" id="email">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" name="femail"/><span class="formerror"></span>
+              <input type="email" placeholder="Email" name="femail" required/><span class="formerror"></span>
             </div>
             <div class="input-field" id="phone">
               <i class="fas fa-mobile"></i>
-              <input type="phone" placeholder="Mobile" name="fphone"/><span class="formerror"></span>
+              <input type="phone" placeholder="Mobile" name="fphone" required/><span class="formerror"></span>
             </div>
             <div class="input-field" >
               <i class="fas fa-calendar-alt"></i>
-              <input placeholder="Date Of Birth" type="text" onfocus="(this.type = 'date')"/><span class="formerror"></span>
+              <input placeholder="Date Of Birth" type="text" onfocus="(this.type = 'date')" required/><span class="formerror"></span>
             </div>
             <div class="input-field" id="pass">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" name="fpass"/><span class="formerror"></span>
+              <input type="password" placeholder="Password" name="fpass" required/><span class="formerror"></span>
             </div>
             <div class="input-field" id="cpass">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Confirm Password" name="fcpass" /><span class="formerror"></span>
+              <input type="password" placeholder="Confirm Password" name="fcpass" required/><span class="formerror"></span>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" class="btn" value="Sign up" id="anchor" onclick="fnew()"/>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
