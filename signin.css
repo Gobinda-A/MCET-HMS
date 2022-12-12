@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body,
 input {
   font-family: "Poppins", sans-serif;
@@ -56,11 +57,7 @@ transition: 0.5s;
   
 }
 /* Header Section End */
-.formerror{
-  color: red;
-  font-weight: lighter;
-  width: 100%;
-}
+
 .container {
   position: relative;
   width: 100%;

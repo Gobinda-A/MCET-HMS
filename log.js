@@ -1,6 +1,6 @@
-document.getElementById("myAnchor").addEventListener("click", function(event){
-    event.preventDefault()
-  });
+// document.getElementById("myAnchor").addEventListener("click", function(event){
+//     event.preventDefault()
+//   });
           function verifyMe(){
               let uname='Gobu1208';
               let pass='Gobu123';

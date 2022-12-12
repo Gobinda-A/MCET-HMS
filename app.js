@@ -57,9 +57,9 @@ function validateForm(){
   }
 return returnval;
 }
-document.getElementById("anchor").addEventListener("click", function(event){
-  event.preventDefault()
-});
+// document.getElementById("anchor").addEventListener("click", function(event){
+//   event.preventDefault()
+// });
 function fnew(){
   console.log(validateForm());
   if(validateForm()==true){
